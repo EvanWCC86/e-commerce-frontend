@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect} from 'react'
+import React, {useState} from 'react'
 import {heroData} from '../data/heroData'
 import { AiOutlineArrowLeft, AiOutlineArrowRight  } from 'react-icons/ai';
 import {Link} from 'react-router-dom'
