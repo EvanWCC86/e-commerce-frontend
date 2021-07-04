@@ -1,0 +1,48 @@
+@import './variable';
+@import './goodsCard';
+@import './navbar';
+@import './sidebar';
+@import './hero';
+@import './categoryPage';
+@import './detailPage';
+@import './shoppingCart';
+@import './shopCartPage';
+@import './homePage';
+@import "./cartItems__container";
+
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body {
+    background-color: $body-color;
+}
+a{
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+img {
+    width: 100%;
+}
+
+// backdrop
+.backdrop {
+    width:100%;
+    height:100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index:100;
+    position:fixed;
+    top:0;
+    left:0;
+}
+

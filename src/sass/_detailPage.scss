@@ -1,0 +1,109 @@
+.detail_page {
+    
+    padding-top:100px;
+    height: 100vh;
+    .theItem {
+        margin-bottom: 50px;
+        padding-top:40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+
+        @media screen and (min-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .image_container{
+            max-height: 500px;
+            img{
+                width: 100%;
+                object-fit: contain;
+                height: 100%;
+            }
+        }
+
+        .theItem_content {
+
+            p{
+                margin-top: 10px;
+                color:$main_color;
+                span{
+                    color:$text_color;
+                }
+            }
+        }
+        button {
+            text-transform: uppercase;
+            margin-top: 10px;
+            
+            padding:4px 20px;
+            outline:none;
+            border:none;
+            border-radius: 6px;
+            cursor: pointer;
+            background-color: $main_color;
+            color:white;
+
+            &:hover {
+                background-color: white;
+                color:$main_color;
+            }
+        }
+    }
+    // theItem end
+
+   
+}
+
+.related_product_container{
+    display: block;
+    padding:20px;
+    height: 400px;
+    background-color: white;
+    box-shadow: $light-shadow;
+    h1 {
+        margin:20px auto;
+    }
+    .related_product{
+        display: flex;
+        overflow:auto;
+    
+        // change width of the goodscard
+        .goodsCard{
+            min-width: 250px;
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+
+            .image_container{
+                height: 200px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+            }
+            .goods_content{
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               height: 80px;
+               h3{
+                   margin-top: 5px;
+               }
+               p{
+                   font-size: 1.2rem;
+               }
+               button{
+                   border:none;
+                   outline:none;
+                   background-color: $main_color;
+                   color:white;
+                   border-radius: 8px;
+                   padding:4px 10px;
+               }
+            }
+        }
+    }
+}

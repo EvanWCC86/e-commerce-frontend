@@ -1,0 +1,53 @@
+.navbar {
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 200000;
+    background-color: transparent;
+    
+    @media screen and (min-width: 768px) {
+
+    }
+}
+.navbar_container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav_links {
+        display: none;
+        @media screen and (min-width: 768px) {
+            display:flex;
+
+            li{
+                list-style: none;
+                margin-right: 20px;
+            }
+            a {
+                text-decoration: none;
+                color:$main_color;
+                
+                text-transform: capitalize;
+                font-size: 1.2rem;
+
+            }
+        }
+    }
+
+    .navbar-right {
+        font-size: 1.3rem;
+
+        
+        .navbar_menu {
+            border:none;
+            outline:none;
+            font-size: 1.3rem;
+            background-color: transparent;
+            margin-left: 5px;
+        }
+    }
+    
+}

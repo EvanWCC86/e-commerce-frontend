@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Navbar from './components/Navbar'
 
-function App() {
+import HomePage from './pages/HomePage'
+import Sidebar from './components/Sidebar'
+
+import CategoryPage from './pages/CategoryPage'
+import DetailPage from './pages/DetailPage'
+import BackDrop from './components/BackDrop'
+import ShoppingCart from './components/ShoppingCart'
+import ShopcartPage from './pages/ShopcartPage'
+
+const App = () => {
+  const [sidebarShow, setSidebarShow] = useState(false)
+  const [showCart, setShowCart] = useState(false)
+  
+  
+  
+  
+    const toggleMenu = () => {
+        setSidebarShow(!sidebarShow)
+    }
+    const toggleCart = () => {
+      setShowCart(!showCart)
+    }
+
+    
+    
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <Navbar toggleMenu={toggleMenu} sidebarShow={sidebarShow} toggleCart={toggleCart} />
+      <Sidebar sidebarShow={sidebarShow} toggleMenu={toggleMenu}  />
+      <ShoppingCart showCart={showCart} toggleCart={toggleCart} />
+      <BackDrop toggleMenu={toggleMenu} sidebarShow={sidebarShow} />
+      
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+       
+        <Route exact path="/cart" component={ShopcartPage} />
+        <Route exact path="/:category" component={CategoryPage} />
+        <Route exact path="/product/:id" component={DetailPage} />
+       
+       
+      </Switch>
+    </Router>
+  )
 }
 
-export default App;
+export default App
