@@ -1,9 +1,12 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import {navbarData} from '../data/navbarData'
-import { IoIosMan,IoIosWoman,IoMdClose} from 'react-icons/io';
-import { GiRunningShoe,GiBigDiamondRing} from 'react-icons/gi';
+import { IoMdClose} from 'react-icons/io';
+
+
 const Sidebar = ({sidebarShow, toggleMenu}) => {
+
+   
     return (
         <aside className={`longSidebar ${sidebarShow ? "showSidebar" : ""}`}>
             <div className="longSidebar_container">

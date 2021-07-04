@@ -39,7 +39,7 @@
 
     .navbar-right {
         font-size: 1.3rem;
-
+        display: flex;
         
         .navbar_menu {
             border:none;
@@ -47,6 +47,23 @@
             font-size: 1.3rem;
             background-color: transparent;
             margin-left: 5px;
+        }
+        .cart{
+            margin-right: 10px;
+            display: flex;
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 17px;
+                height: 17px;
+                border-radius: 50%;
+                background-color: $main_color;
+                font-size: 1rem;
+                color: white;
+                
+                
+            }
         }
     }
     

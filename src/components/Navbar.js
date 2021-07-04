@@ -2,7 +2,14 @@ import React from 'react'
 import {navbarData} from '../data/navbarData'
 import {Link} from 'react-router-dom'
 import { AiOutlineMenu,AiOutlineShoppingCart  } from 'react-icons/ai';
+import {useSelector} from "react-redux";
 const Navbar = ({toggleMenu,toggleCart}) => {
+
+    const cart = useSelector((state) => state.cart);
+    const {cartItems} = cart;
+    const getCartCount = () => {
+        return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
+      };
     
     return (
         <nav className="navbar">
@@ -19,8 +26,10 @@ const Navbar = ({toggleMenu,toggleCart}) => {
                     ))}
                 </ul>
                 <div className="navbar-right">
-                    
+                    <p className="cart">
                     <AiOutlineShoppingCart onClick={toggleCart} />
+                    <span>{getCartCount()}</span>
+                    </p>
                   
                     <button className="navbar_menu">
                         <AiOutlineMenu onClick={toggleMenu} />
