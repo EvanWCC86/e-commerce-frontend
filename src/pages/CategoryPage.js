@@ -9,7 +9,7 @@ const CategoryPage = () => {
     const {category} = useParams()
     const dispatch = useDispatch();
     const getCategoryProducts = useSelector((state) => state.getCategoryProducts);
-    const { categoryProducts, loading, error } = getCategoryProducts;
+    const { categoryProducts} = getCategoryProducts;
     // const filterData = products.filter((item) => item.category === category )
     // console.log(goodsData)
     // console.log(filterData)

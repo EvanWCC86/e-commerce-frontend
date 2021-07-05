@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import CartItemsContainer from '../components/CartItemsContainer';
 import Subtotal from '../components/Subtotal';
 // import {useSelector, useDispatch} from "react-redux";
@@ -14,7 +14,7 @@ const ShopcartPage = () => {
     // const cart = useSelector((state) => state.cart);
     // const {cartItems} = cart;
 
-    useEffect(() => {}, []);
+    // useEffect(() => {}, []);
 
     // const qtyChangeHandler = (id, qty) => {
     //     dispatch(addToCart(id, qty));

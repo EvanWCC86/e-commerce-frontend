@@ -15,7 +15,7 @@ const DetailPage = ({history}) => {
     
     const dispatch = useDispatch();
     const productDetails = useSelector((state) => state.getProductDetails);
-    const { loading, error, product } = productDetails;
+    const {product } = productDetails;
     
     
     
