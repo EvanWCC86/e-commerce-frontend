@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import PhoneOutlinedIcon from '@m@mui/icons-material/PhoneOutlined';
-import EmailOutlinedIcon from '@@mui/icons-material/EmailOutlined';
-import HomeOutlinedIcon from '@@mui/icons-material/HomeOutlined';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import EmailIcon from '@mui/icons-material/Email';
+import HomeIcon from '@mui/icons-material/Home';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
+
 
 const Footer = () => {
     return (
@@ -15,15 +16,15 @@ const Footer = () => {
                 <FooterItem>
                     <h1>EasyWeb.</h1>
                     <ContactItem>
-                        <span><HomeOutlinedIcon /></span>
+                        <span><HomeIcon /></span>
                         <span>Montreal,Quebce,Canada</span>
                     </ContactItem>
                     <ContactItem>
-                        <span><PhoneOutlinedIcon /></span>
+                        <span><LocalPhoneIcon /></span>
                         <span>514-555-****</span>
                     </ContactItem>
                     <ContactItem>
-                        <span><EmailOutlinedIcon /></span>
+                        <span><EmailIcon /></span>
                         <span>evan**@gmail.com</span>
                     </ContactItem>
                 </FooterItem>
