@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 
 import HomePage from './pages/HomePage'
 import Sidebar from './components/Sidebar'
+import Footer from './components/Footer'
 
 import CategoryPage from './pages/CategoryPage'
 import DetailPage from './pages/DetailPage'
@@ -43,6 +44,7 @@ const App = () => {
        
        
       </Switch>
+       <Footer />
     </Router>
   )
 }

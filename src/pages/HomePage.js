@@ -2,6 +2,7 @@ import React,{useEffect} from 'react'
 import Hero from '../components/Hero'
 import {useDispatch, useSelector} from "react-redux";
 import Allgoods from '../components/Allgoods';
+import Subscribe from '../components/Subscribe';
 
 // actions
 import {getProducts as listProducts} from '../redux/actions/productActions';
@@ -66,6 +67,9 @@ const HomePage = () => {
                                 <Allgoods goods={computers} />
                             </div>
                         </div>
+                         <section className="subscribe_section">
+                             <Subscribe />
+                         </section>
                     </div>
                 )}
             </div>

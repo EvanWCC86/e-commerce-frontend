@@ -11,6 +11,15 @@
 
     }
 }
+.navbarShow{
+    background-color: black;
+    position: fixed;
+    color:white;
+
+    .navbar_menu{
+        color:white;
+    }
+}
 .navbar_container {
     height: 100%;
     display: flex;
@@ -47,6 +56,7 @@
             font-size: 1.3rem;
             background-color: transparent;
             margin-left: 5px;
+            cursor: pointer;
         }
         .cart{
             margin-right: 10px;
