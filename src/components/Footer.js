@@ -1,12 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import EmailIcon from '@mui/icons-material/Email';
-import HomeIcon from '@mui/icons-material/Home';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@@mui/icons-material/Instagram';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import TwitterIcon from '@mui/icons-material/Twitter';
+// import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+// import EmailIcon from '@mui/icons-material/Email';
+// import HomeIcon from '@mui/icons-material/Home';
+// import FacebookIcon from '@mui/icons-material/Facebook';
+// import InstagramIcon from '@mui/icons-material/Instagram';
+// import LinkedInIcon from '@mui/icons-material/LinkedIn';
+// import TwitterIcon from '@mui/icons-material/Twitter';
+import PhoneOutlinedIcon from '@material-ui/icons/PhoneOutlined';
+import EmailOutlinedIcon from '@material-ui/icons/EmailOutlined';
+import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 
 const Footer = () => {
@@ -16,15 +23,15 @@ const Footer = () => {
                 <FooterItem>
                     <h1>EasyWeb.</h1>
                     <ContactItem>
-                        <span><HomeIcon /></span>
+                        <span><HomeOutlinedIcon /></span>
                         <span>Montreal,Quebce,Canada</span>
                     </ContactItem>
                     <ContactItem>
-                        <span><LocalPhoneIcon /></span>
+                        <span><PhoneOutlinedIcon /></span>
                         <span>514-555-****</span>
                     </ContactItem>
                     <ContactItem>
-                        <span><EmailIcon /></span>
+                        <span><EmailOutlinedIcon /></span>
                         <span>evan**@gmail.com</span>
                     </ContactItem>
                 </FooterItem>
