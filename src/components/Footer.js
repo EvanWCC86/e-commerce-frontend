@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import PhoneOutlinedIcon from '@material-ui/icons/PhoneOutlined';
-import EmailOutlinedIcon from '@material-ui/icons/EmailOutlined';
-import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import TwitterIcon from '@material-ui/icons/Twitter';
+import PhoneOutlinedIcon from '@m@mui/icons-material/PhoneOutlined';
+import EmailOutlinedIcon from '@@mui/icons-material/EmailOutlined';
+import HomeOutlinedIcon from '@@mui/icons-material/HomeOutlined';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 const Footer = () => {
     return (
